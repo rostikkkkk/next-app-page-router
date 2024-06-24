@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc855ac1-416f-4c4e-94a5-1c129424e4aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../test-task/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../test-task/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test-task/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../test-task/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="38fe1925-64d2-4be2-b0c9-be9007771112" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2iK5yQu1aj2A880ernuOLZW4Zbk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Hp/WebstormProjects/next-app-page-router",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Hp\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\Hp\\WebstormProjects\\next-app-page-router\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hp\WebstormProjects\next-app-page-router" />
+      <recent name="C:\Users\Hp\WebstormProjects\next-app-page-router\src\pages\product" />
+      <recent name="C:\Users\Hp\WebstormProjects\next-app-page-router\src" />
+      <recent name="C:\Users\Hp\WebstormProjects\next-app-page-router\src\components" />
+      <recent name="C:\Users\Hp\WebstormProjects\next-app-page-router\public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc855ac1-416f-4c4e-94a5-1c129424e4aa" name="Changes" comment="" />
+      <created>1719226682140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719226682140</updated>
+      <workItem from="1719226683383" duration="7132000" />
+      <workItem from="1719242501437" duration="2024000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
