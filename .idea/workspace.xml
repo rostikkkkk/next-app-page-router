@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc855ac1-416f-4c4e-94a5-1c129424e4aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test-task/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../test-task/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test-task/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../test-task/README.md" afterDir="false" />
     </list>
@@ -14,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="38fe1925-64d2-4be2-b0c9-be9007771112" />
@@ -61,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1719226682140</updated>
       <workItem from="1719226683383" duration="7132000" />
-      <workItem from="1719242501437" duration="2024000" />
+      <workItem from="1719242501437" duration="6043000" />
+      <workItem from="1719373117942" duration="5992000" />
     </task>
     <servers />
   </component>

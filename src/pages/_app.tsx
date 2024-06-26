@@ -3,17 +3,16 @@ import type { AppProps } from "next/app";
 import "../../i18n";
 import { QueryParamProvider } from "use-query-params";
 import NextAdapterApp from "next-query-params/app";
-import { StoreProvider } from "@/store/provider";
 import { ConfigProvider } from "antd";
+import { wrapper } from "@/store/store";
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
-    <StoreProvider>
-      <QueryParamProvider adapter={NextAdapterApp}>
-        <ConfigProvider>
-          <Component {...pageProps} />
-        </ConfigProvider>
-      </QueryParamProvider>
-    </StoreProvider>
+    <QueryParamProvider adapter={NextAdapterApp}>
+      <ConfigProvider>
+        <Component {...pageProps} />
+      </ConfigProvider>
+    </QueryParamProvider>
   );
 }
+export default wrapper.withRedux(App);

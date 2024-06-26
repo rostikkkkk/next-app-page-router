@@ -1,42 +1,44 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Product } from "@/types/productType";
-import { AppDispatch, RootState } from "@/store/store";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "@/store/slice/products";
 import Link from "next/link";
 import { useRouter } from "next/router";
+// import { AppDispatch, RootState, store } from "@/store/store";
+// import { useDispatch, useSelector } from "react-redux";
+// import { fetchProducts } from "@/store/slice/products";
+// import { getProducts } from "@/api/api";
+// import { GetServerSideProps } from "next";
 
-const ProductPage = () => {
+const ProductPage = ({ products }: any) => {
   const [showContent, setShowContent] = useState(false);
-  const dispatch: AppDispatch = useDispatch();
-  const { products, isLoading } = useSelector(
-    (state: RootState) => state.products
-  );
+  // const dispatch: AppDispatch = useDispatch();
+  // const { products, isLoading } = useSelector(
+  //   (state: RootState) => state.products
+  // );
   const router = useRouter();
   const { id } = router.query;
   const singleProduct = products.find((product: Product) => {
     return product.asin === id;
   });
-  useEffect(() => {
-    dispatch(fetchProducts());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchProducts());
+  // }, [dispatch]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 500);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowContent(true);
+  //   }, 500);
+  //
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading || !showContent) {
-    return (
-      <div className="flex justify-center mt-8">
-        <h6 className="text-lg">Loading...</h6>
-      </div>
-    );
-  }
+  // if (isLoading || !showContent) {
+  //   return (
+  //     <div className="flex justify-center mt-8">
+  //       <h6 className="text-lg">Loading...</h6>
+  //     </div>
+  //   );
+  // }
 
   if (!singleProduct) {
     return (
@@ -92,5 +94,28 @@ const ProductPage = () => {
     </section>
   );
 };
+export async function getServerSideProps(context: any) {
+  const protocol = context.req.headers["x-forwarded-proto"] || "http";
+  const host = context.req.headers["host"];
+  const url = `${protocol}://${host}/db.json`;
 
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    const products = data.products;
+
+    return {
+      props: {
+        products,
+      },
+    };
+  } catch (error) {
+    console.error("Failed to fetch products:", error);
+    return {
+      props: {
+        products: [],
+      },
+    };
+  }
+}
 export default ProductPage;
